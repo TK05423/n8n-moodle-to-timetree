@@ -1,4 +1,4 @@
-# Moodle-to-Calendar 自动化中心 (透過 n8n)
+# Moodle-to-Calendar 自動化中心 (透過 n8n)
 
 ![n8n](https://img.shields.io/badge/Automation-n8n-FF6C37?style=flat-square&logo=n8n)
 ![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript)
@@ -111,5 +111,6 @@ This project establishes a multi-layered synchronization pipeline to ensure seam
 
 ## 📜 Disclaimer
 This project is developed for personal educational and portfolio purposes only. It is not an official service provided by National Chengchi University (NCCU). The data synchronized via this automation is for reference only; the developer is not liable for any schedule misses or data inaccuracies resulting from system latency or script errors. Users are solely responsible for the security of their own Moodle tokens and API credentials.
+
 
 
