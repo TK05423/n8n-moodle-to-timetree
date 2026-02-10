@@ -21,7 +21,7 @@
 
 本專案建立了一個多層次的同步管線，確保資料從學校系統準確傳遞至個人裝置：
 
-![n8n 工作流架構](assets/workflow screenshot.png)
+![n8n 工作流架構](assets/workflow-screenshot.png)
 
 ### Step 1：資料擷取與 ETL 轉化
 - **定期觸發**：每 4 小時透過 Cron Node 抓取 **NCCU Moodle** 的 `ics` 檔案。
@@ -79,7 +79,7 @@ This project is an automated solution developed for NCCU students to address the
 
 This project establishes a multi-layered synchronization pipeline to ensure seamless data delivery from university systems to personal devices:
 
-![n8n Workflow Architecture](assets/workflow screenshot.png)
+![n8n Workflow Architecture](assets/workflow-screenshot.png)
 
 ### Step 1: Data Acquisition & ETL Transformation
 - **Scheduled Trigger**: Fetches the **NCCU Moodle** `ics` file every 4 hours via Cron Node.
@@ -111,6 +111,7 @@ This project establishes a multi-layered synchronization pipeline to ensure seam
 
 ## 📜 Disclaimer
 This project is developed for personal educational and portfolio purposes only. It is not an official service provided by National Chengchi University (NCCU). The data synchronized via this automation is for reference only; the developer is not liable for any schedule misses or data inaccuracies resulting from system latency or script errors. Users are solely responsible for the security of their own Moodle tokens and API credentials.
+
 
 
 
