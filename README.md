@@ -8,9 +8,9 @@
 本專案為政大學生開發的自動化解決方案，旨在解決 Moodle 系統作業截止日期通知不直觀的問題。透過 **n8n** 整合 **Google Calendar**，並以手機系統行事曆作為橋接，將分散的課程資訊轉化為跨平台的精準行動提醒。
 
 ## ✨ 專案核心價值 (Core Value)
-本專案不只是單純的資料同步，更針對日常使用情境進行了深度優化：
-- **專為 TimeTree 使用者打造**：針對習慣以 TimeTree 作為主要生活與社交行事曆的用戶，透過系統級橋接解決了 TimeTree 與 Google Calendar 間無法直接連動的限制。
-- **極致清晰的事件名稱**：捨棄 Moodle 原始混亂的命名，透過 ETL 腳本自動生成 **「完整課程名稱 ＋ 事件描述」**（例如：*管理資訊系統 作業一繳交*），讓用戶在週檢視或月檢視介面中一眼掌握核心資訊。
+本專案不只是單純的資料同步，更針對數位時程管理情境進行了深度優化：
+- **跨平台用戶首選**：不論是以 **Google Calendar** 作為雲端中控中心，或是習慣以 **TimeTree** 作為主要生活社交行事曆的用戶，本流程皆能完美適配，確保資訊即時送達。
+- **極致清晰的事件名稱**：捨棄 Moodle 原始混亂的命名格式，透過自定義 ETL 腳本自動生成 **「完整課程名稱 ＋ 事件描述」**（例如：*管理資訊系統 作業一繳交*）。在月檢視或週檢視介面中，用戶無需點擊即可一眼掌握核心行程，大幅提升閱覽效率。
 
 ## 🛠 技術棧
 - **核心引擎**：n8n (Workflow Automation)
@@ -71,8 +71,8 @@
 This project is an automated solution developed for NCCU students to address the lack of intuitive assignment notifications in the Moodle system. By utilizing **n8n** to integrate **Google Calendar** and bridging through mobile system calendars, it transforms fragmented course data into precise, cross-platform reminders.
 
 ## ✨ Core Value Proposition
-- **Optimized for TimeTree Power Users**: Designed specifically for users who rely on TimeTree as their primary life and social calendar. It bridges the gap between TimeTree and Google Calendar via system-level integration.
-- **Enhanced Clarity**: Replaces messy Moodle titles with a clean **"Full Course Name + Event Title"** format (e.g., *MIS Assignment 1 Submission*), allowing users to grasp essential information at a glance in monthly or weekly views.
+- **Optimized for Google & TimeTree Power Users**: Whether you use **Google Calendar** as your cloud master source or **TimeTree** as your primary social calendar, this workflow ensures your academic schedule is always synced and accessible.
+- **Superior Event Clarity**: Replaces messy Moodle titles with a clean **"Full Course Name + Event Title"** format (e.g., *MIS Assignment 1 Submission*). This allows users to grasp essential info at a glance in monthly/weekly views without needing to click for details.
 
 ## 🛠 Tech Stack
 - **Core Engine**: n8n (Workflow Automation)
@@ -120,3 +120,4 @@ This project establishes a multi-layered synchronization pipeline to ensure seam
 
 ## 📜 Disclaimer
 This project is developed for personal educational and portfolio purposes only. It is not an official service provided by National Chengchi University (NCCU). The data synchronized via this automation is for reference only; the developer is not liable for any schedule misses or data inaccuracies. Users are solely responsible for the security of their own Moodle tokens and API credentials.
+
