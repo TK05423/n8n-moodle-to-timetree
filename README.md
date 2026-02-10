@@ -7,6 +7,11 @@
 ## 🚀 專案簡介
 本專案為政大學生開發的自動化解決方案，旨在解決 Moodle 系統作業截止日期通知不直觀的問題。透過 **n8n** 整合 **Google Calendar**，並以手機系統行事曆作為橋接，將分散的課程資訊轉化為跨平台的精準行動提醒。
 
+## ✨ 專案核心價值 (Core Value)
+本專案不只是單純的資料同步，更針對日常使用情境進行了深度優化：
+- **專為 TimeTree 使用者打造**：針對習慣以 TimeTree 作為主要生活與社交行事曆的用戶，透過系統級橋接解決了 TimeTree 與 Google Calendar 間無法直接連動的限制。
+- **極致清晰的事件名稱**：捨棄 Moodle 原始混亂的命名，透過 ETL 腳本自動生成 **「完整課程名稱 ＋ 事件描述」**（例如：*管理資訊系統 作業一繳交*），讓用戶在週檢視或月檢視介面中一眼掌握核心資訊。
+
 ## 🛠 技術棧
 - **核心引擎**：n8n (Workflow Automation)
 - **開發語言**：JavaScript (Node.js) — 用於處理複雜的 ETL 資料清洗邏輯。
@@ -40,7 +45,7 @@
 ---
 
 ## 💡 技術亮點
-- **資安意識**：導出的工作流 JSON 已進行脫敏處理，保護個人 `userid` 與 `authtoken`。
+- **資安意識**：導出的工作流 JSON 已進行脫敏處理，保護個人憑證安全。
 - **資料一致性**：透過自定義 ID 邏輯實現 **冪等性操作 (Idempotent)**，確保多次運行也不會產生重複事件。
 - **穩健性設計**：包含錯誤觸發節點，在 Moodle 伺服器或 API 異常時能及時獲取通知。
 - **混合開發模式**：結合低程式碼工具 (n8n) 的開發效率與自定義腳本 (JavaScript) 的靈活性。
@@ -52,7 +57,7 @@
 - `README.md`: 專案說明文件。
 
 ## 📜 免責聲明
-本專案僅供個人學習與作品集展示之用，並非國立政治大學 (NCCU) 官方提供之服務。本工具所同步之資訊僅供參考，使用者須自行承擔自動化腳本可能產生的風險（如：系統延遲導致的行程遺漏）。開發者不對因使用本工具而產生的任何資料錯誤或損失負責。此外，使用者須妥善保管個人 Moodle Token 與 API 憑證，以維護個人資安。
+本專案僅供個人學習與作品集展示之用，並非國立政治大學 (NCCU) 官方提供之服務。本工具所同步之資訊僅供參考，使用者須自行承擔自動化腳本可能產生的風險。開發者不對因使用本工具而產生的任何資料錯誤或損失負責。此外，使用者須妥善保管個人 Moodle Token 與 API 憑證，以維護個人資安。
 
 ------------------------------------------------------------------
 
@@ -64,6 +69,10 @@
 
 ## 🚀 Project Overview
 This project is an automated solution developed for NCCU students to address the lack of intuitive assignment notifications in the Moodle system. By utilizing **n8n** to integrate **Google Calendar** and bridging through mobile system calendars, it transforms fragmented course data into precise, cross-platform reminders.
+
+## ✨ Core Value Proposition
+- **Optimized for TimeTree Power Users**: Designed specifically for users who rely on TimeTree as their primary life and social calendar. It bridges the gap between TimeTree and Google Calendar via system-level integration.
+- **Enhanced Clarity**: Replaces messy Moodle titles with a clean **"Full Course Name + Event Title"** format (e.g., *MIS Assignment 1 Submission*), allowing users to grasp essential information at a glance in monthly or weekly views.
 
 ## 🛠 Tech Stack
 - **Core Engine**: n8n (Workflow Automation)
@@ -98,7 +107,7 @@ This project establishes a multi-layered synchronization pipeline to ensure seam
 ---
 
 ## 💡 Technical Highlights
-- **Security Awareness**: The exported workflow JSON is masked to protect personal `userid` and `authtoken`.
+- **Security Awareness**: The exported workflow JSON is masked to protect personal credentials.
 - **Data Consistency**: Implements **Idempotent Operations** via custom UID logic, ensuring multiple runs do not create duplicate entries.
 - **Robustness**: Includes error-trigger nodes to provide instant notifications in case of API or server failures.
 - **Hybrid Approach**: Balances the visual efficiency of low-code tools (n8n) with the power of custom scripts for complex data parsing.
@@ -110,9 +119,4 @@ This project establishes a multi-layered synchronization pipeline to ensure seam
 - `README.md`: Project documentation.
 
 ## 📜 Disclaimer
-This project is developed for personal educational and portfolio purposes only. It is not an official service provided by National Chengchi University (NCCU). The data synchronized via this automation is for reference only; the developer is not liable for any schedule misses or data inaccuracies resulting from system latency or script errors. Users are solely responsible for the security of their own Moodle tokens and API credentials.
-
-
-
-
-
+This project is developed for personal educational and portfolio purposes only. It is not an official service provided by National Chengchi University (NCCU). The data synchronized via this automation is for reference only; the developer is not liable for any schedule misses or data inaccuracies. Users are solely responsible for the security of their own Moodle tokens and API credentials.
